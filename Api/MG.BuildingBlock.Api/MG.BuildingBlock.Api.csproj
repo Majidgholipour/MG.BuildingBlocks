@@ -1,0 +1,72 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+
+
+        <GenerateDocumentationFile>true</GenerateDocumentationFile>
+
+        <PackageId>MG.BuildingBlock.Api</PackageId>
+        <Authors>MG</Authors>
+        <Company>MG</Company>
+        <RepositoryType>git</RepositoryType>
+        <PublishRepositoryUrl>true</PublishRepositoryUrl>
+        <EmbedUntrackedSources>true</EmbedUntrackedSources>
+        <IncludeSymbols>true</IncludeSymbols>
+        <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+        <Deterministic>true</Deterministic>
+        <Title>MG.BuildingBlock.Api</Title>
+        <Description>MG.BuildingBlock.Api</Description>
+        <PackageTags>MG</PackageTags>
+        <PackageLicenseExpression>MIT</PackageLicenseExpression>
+        <PackageRequireLicenseAcceptance>False</PackageRequireLicenseAcceptance>
+        <Copyright>Copyright © MG</Copyright>
+        <MinVerTagPrefix>v</MinVerTagPrefix>
+        
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Asp.Versioning.Http" Version="8.1.0" />
+        <PackageReference Include="Asp.Versioning.Mvc.ApiExplorer" Version="8.1.0" />
+        <PackageReference Include="AspNetCore.HealthChecks.UI.Client" Version="8.0.1" />
+        <PackageReference Include="CaptchaGen.NetCore" Version="1.1.2" />
+        <PackageReference Include="Consul" Version="1.7.14.3" />
+        <PackageReference Include="Elastic.Serilog.Sinks" Version="8.11.1" />
+        <PackageReference Include="Hangfire.AspNetCore" Version="1.8.14" />
+        <PackageReference Include="Hangfire.MemoryStorage" Version="1.8.1.1" />
+        <PackageReference Include="Microsoft.AspNet.WebApi.Client" Version="6.0.0" />
+        <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="8.0.7" />
+        <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.4" />
+        <PackageReference Include="Microsoft.Extensions.Diagnostics.HealthChecks" Version="8.0.7" />
+        <PackageReference Include="Microsoft.Extensions.Diagnostics.HealthChecks.EntityFrameworkCore" Version="8.0.7" />
+        <PackageReference Include="Microsoft.Extensions.Localization" Version="8.0.6" />
+        <PackageReference Include="Microsoft.Extensions.Localization.Abstractions" Version="8.0.6" />
+        <PackageReference Include="prometheus-net.AspNetCore" Version="8.2.1" />
+        <PackageReference Include="Serilog" Version="3.1.1" />
+        <PackageReference Include="Serilog.AspNetCore" Version="8.0.1" />
+        <PackageReference Include="Serilog.Extensions.Logging" Version="8.0.0" />
+        <PackageReference Include="Serilog.Sinks.Console" Version="5.0.1" />
+        <PackageReference Include="Serilog.Sinks.Elasticsearch" Version="10.0.0" />
+        <PackageReference Include="Serilog.Sinks.File" Version="5.0.0" />
+        <PackageReference Include="StackExchange.Redis" Version="2.8.0" />
+        <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
+        <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="8.0.0" />
+        
+        
+        
+        <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.6">
+            <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+            <PrivateAssets>all</PrivateAssets>
+        </PackageReference>
+        <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.6"/>
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\..\Application\MG.BuildingBlock.Application.csproj" />
+      <ProjectReference Include="..\..\Application\MG.BuildingBlock.Application\MG.BuildingBlock.Application.csproj" />
+      <ProjectReference Include="..\..\Domain\MG.BuildingBlock.Domain\MG.BuildingBlock.Domain.csproj" />
+      <ProjectReference Include="..\..\Infra\MG.BuildingBlock.Infra.EF\MG.BuildingBlock.Infra.EF.csproj" />
+    </ItemGroup>
+    
+</Project>

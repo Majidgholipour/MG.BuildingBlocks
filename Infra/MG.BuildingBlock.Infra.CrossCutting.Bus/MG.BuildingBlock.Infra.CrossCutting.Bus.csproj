@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+    
+    <ItemGroup>
+        <PackageReference Include="Autofac" Version="4.9.4" />
+        <PackageReference Include="Autofac.Extensions.DependencyInjection" Version="5.0.1" />
+        <PackageReference Include="Autofac.Extras.CommonServiceLocator" Version="5.0.0" />
+    </ItemGroup>
+    
+    <ItemGroup>
+      <ProjectReference Include="..\..\Application\MG.BuildingBlock.Application\MG.BuildingBlock.Application.csproj" />
+      <ProjectReference Include="..\..\Domain\MG.BuildingBlock.Domain\MG.BuildingBlock.Domain.csproj" />
+      <ProjectReference Include="..\MG.BuildingBlock.Infra\MG.BuildingBlock.Infra.csproj" />
+    </ItemGroup>
+
+</Project>
