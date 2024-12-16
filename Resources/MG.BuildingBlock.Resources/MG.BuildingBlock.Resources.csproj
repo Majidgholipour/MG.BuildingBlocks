@@ -3,7 +3,37 @@
     <PropertyGroup>
         <TargetFramework>net8.0</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
-        <Nullable>enable</Nullable>
+        <GenerateDocumentationFile>true</GenerateDocumentationFile>
+        <PackageId>MG.BuildingBlock.Api</PackageId>
+        <Authors>MG</Authors>
+        <Company>MG</Company>
+        <RepositoryType>git</RepositoryType>
+        <PublishRepositoryUrl>true</PublishRepositoryUrl>
+        <EmbedUntrackedSources>true</EmbedUntrackedSources>
+        <IncludeSymbols>true</IncludeSymbols>
+        <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+        <Deterministic>true</Deterministic>
+        <Title>MG.BuildingBlock.Api</Title>
+        <Description>MG.BuildingBlock.Api</Description>
+        <PackageTags>MG</PackageTags>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <GenerateDocumentationFile>true</GenerateDocumentationFile>
+        <PackageId>MG.BuildingBlock.Resources</PackageId>
+        <Authors>MG</Authors>
+        <Company>MG</Company>
+        <RepositoryType>git</RepositoryType>
+        <PublishRepositoryUrl>true</PublishRepositoryUrl>
+        <EmbedUntrackedSources>true</EmbedUntrackedSources>
+        <IncludeSymbols>true</IncludeSymbols>
+        <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+        <Deterministic>true</Deterministic>
+        <Title>MG.BuildingBlock.Resources</Title>
+        <Description>MG.BuildingBlock.Resources</Description>
+        <PackageTags>MG</PackageTags>
+        <PackageLicenseExpression>MIT</PackageLicenseExpression>
+        <PackageRequireLicenseAcceptance>False</PackageRequireLicenseAcceptance>
+        <Copyright>Copyright © MG</Copyright>
+        <MinVerTagPrefix>v</MinVerTagPrefix>
     </PropertyGroup>
 
     <ItemGroup>
@@ -23,6 +53,10 @@
           <Generator>ResXFileCodeGenerator</Generator>
           <LastGenOutput>Messages.Designer.cs</LastGenOutput>
         </EmbeddedResource>
+        <PackageReference Include="MinVer" Version="6.0.0">
+            <PrivateAssets>all</PrivateAssets>
+            <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
+        </PackageReference>
     </ItemGroup>
 
     <ItemGroup>

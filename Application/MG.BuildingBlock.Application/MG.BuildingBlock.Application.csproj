@@ -3,29 +3,49 @@
     <PropertyGroup>
         <TargetFramework>net8.0</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
-        <Nullable>enable</Nullable>
+        <GenerateDocumentationFile>true</GenerateDocumentationFile>
+        <PackageId>MG.BuildingBlock.Application</PackageId>
+        <Authors>MG</Authors>
+        <Company>MG</Company>
+        <RepositoryType>git</RepositoryType>
+        <PublishRepositoryUrl>true</PublishRepositoryUrl>
+        <EmbedUntrackedSources>true</EmbedUntrackedSources>
+        <IncludeSymbols>true</IncludeSymbols>
+        <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+        <Deterministic>true</Deterministic>
+        <Title>MG.BuildingBlock.Application</Title>
+        <Description>MG.BuildingBlock.Application</Description>
+        <PackageTags>MG</PackageTags>
+        <PackageLicenseExpression>MIT</PackageLicenseExpression>
+        <PackageRequireLicenseAcceptance>False</PackageRequireLicenseAcceptance>
+        <Copyright>Copyright © MG</Copyright>
+        <MinVerTagPrefix>v</MinVerTagPrefix>
+        <Version>1.0.0</Version>
     </PropertyGroup>
     <ItemGroup>
-        <PackageReference Include="AutoMapper" Version="13.0.1" />
-        <PackageReference Include="FluentValidation" Version="11.9.1" />
-        <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="11.9.1" />
-        <PackageReference Include="Humanizer.Core" Version="2.14.1" />
-        <PackageReference Include="MediatR" Version="12.3.0" />
-        <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="8.0.0" />
-        <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="8.0.0" />
-        <PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.2.0" />
-        <PackageReference Include="Polly" Version="8.4.1" />
-        <PackageReference Include="Swashbuckle.AspNetCore.Annotations" Version="6.5.0" />
-        <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="7.1.2" />
-        <PackageReference Include="Swashbuckle.AspNetCore.Filters" Version="8.0.2" />
-        <PackageReference Include="Microsoft.FeatureManagement" Version="3.4.0" />
+        <PackageReference Include="AutoMapper" Version="13.0.1"/>
+        <PackageReference Include="FluentValidation" Version="11.9.1"/>
+        <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="11.9.1"/>
+        <PackageReference Include="Humanizer.Core" Version="2.14.1"/>
+        <PackageReference Include="MediatR" Version="12.3.0"/>
+        <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="8.0.0"/>
+        <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="8.0.0"/>
+        <PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.2.0"/>
+        <PackageReference Include="Polly" Version="8.4.1"/>
+        <PackageReference Include="Swashbuckle.AspNetCore.Annotations" Version="6.5.0"/>
+        <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="7.1.2"/>
+        <PackageReference Include="Swashbuckle.AspNetCore.Filters" Version="8.0.2"/>
+        <PackageReference Include="Microsoft.FeatureManagement" Version="3.4.0"/>
+        <PackageReference Include="MinVer" Version="6.0.0">
+            <PrivateAssets>all</PrivateAssets>
+            <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
+        </PackageReference>
     </ItemGroup>
     <ItemGroup>
-      <ProjectReference Include="..\..\Domain\MG.BuildingBlock.Domain\MG.BuildingBlock.Domain.csproj" />
-      <ProjectReference Include="..\..\Resources\MG.BuildingBlock.Resources\MG.BuildingBlock.Resources.csproj" />
-      <ProjectReference Include="..\..\Domain\MG.BuildingBlock.Domain.csproj" />
-      <ProjectReference Include="..\..\Resources\MG.BuildingBlock.Resources\MG.BuildingBlock.Resources.csproj" />
+        <ProjectReference Include="..\..\Domain\MG.BuildingBlock.Domain\MG.BuildingBlock.Domain.csproj"/>
+        <ProjectReference Include="..\..\Resources\MG.BuildingBlock.Resources\MG.BuildingBlock.Resources.csproj"/>
+        <ProjectReference Include="..\..\Resources\MG.BuildingBlock.Resources\MG.BuildingBlock.Resources.csproj"/>
     </ItemGroup>
-    
+
 
 </Project>
